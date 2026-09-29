@@ -39,6 +39,16 @@
     faders.forEach(function (el) { el.classList.add('visible'); });
   }
 
+  /* --- Mobile call bar: hidden while the hero's own CTAs are on screen --- */
+  var mobileBar = document.querySelector('.mobile-bar');
+  var heroCtas = document.querySelector('.hero .cta-row');
+  if (mobileBar && heroCtas && 'IntersectionObserver' in window) {
+    mobileBar.classList.add('is-hidden');
+    new IntersectionObserver(function (entries) {
+      mobileBar.classList.toggle('is-hidden', entries[0].isIntersecting);
+    }).observe(heroCtas);
+  }
+
   /* --- Lightbox --- */
   var box = document.getElementById('lightbox');
   var lbImg = document.getElementById('lbImg');

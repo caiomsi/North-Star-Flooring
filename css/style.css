@@ -253,7 +253,9 @@ address { font-style: normal; }
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
     padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
     background: rgba(8, 16, 27, .96); border-top: 1px solid var(--line-strong);
+    transition: transform .3s ease, visibility .3s;
   }
+  .mobile-bar.is-hidden { transform: translateY(100%); visibility: hidden; }
   .mobile-bar a { display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: var(--radius); font-weight: 600; text-decoration: none; letter-spacing: .04em; }
   .mb-call { background: var(--gold-grad); color: var(--night); }
   .mb-text { border: 1px solid var(--gold); color: var(--ivory); }
