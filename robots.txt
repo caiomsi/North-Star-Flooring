@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caiomsi.github.io/North-Star-Flooring/sitemap.xml
