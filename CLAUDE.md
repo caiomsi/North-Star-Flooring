@@ -13,7 +13,7 @@ image guidelines).
 
 `index.html` (single page) at root, `css/style.css`, `js/main.js`, photos in `images/`
 (see `images/README.md`; originals live in git-ignored `images/source/`), plus
-`404.html`, `robots.txt`, `sitemap.xml`. `research.md` holds the audit of the client's
+`404.html`, `robots.txt`, `sitemap.xml`. `research.md` (git-ignored, local only — it audits the client's old site) holds the audit of the client's
 old site and every verified/UNKNOWN fact: consult it before writing any claim.
 Hosted on GitHub Pages at `caiomsi.github.io/North-Star-Flooring`; the client's domain
 `thenorthstarflooring.com` will be pointed here after approval.
